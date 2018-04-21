@@ -24,7 +24,7 @@ module.exports = (server) => {
             // Check if username available
             let available = true
             for (const other of users) {
-                if(other.name==user.name) {
+                if(other.name.toLowerCase()==user.name.toLowerCase()) {
                     available = false
                     break
                 }
